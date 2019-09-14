@@ -1,0 +1,31 @@
+.main-carousel {
+  background-color: azure;
+}
+
+.green-line div {
+  border-bottom: 8px solid #2ecc71;
+  width: 4rem;
+}
+
+.carousel-indicators li {
+  background-color: #2ecc71 !important;
+}
+
+.carousel-indicators li .active {
+  background-color: #23cc6b !important;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 55px;
+  color: #2ecc71;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 55px;
+  color: #2ecc71;
+}
+.main-carousel-item {
+  width: 50%;
+}
