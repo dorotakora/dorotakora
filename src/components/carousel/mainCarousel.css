@@ -46,19 +46,37 @@
 .carousel-center-icons {
   text-align: center;
   color: rgb(46, 204, 113);
-  /* padding: 1rem; */
 }
 .fab.fa-linkedin,
 .fab.fa-github-square {
   padding: 0.2em;
 }
 
+.carousel-center.hobbies {
+  display: flex;
+  flex-direction: column;
+}
+
+.hobbies-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2em;
+}
+
+.hobbies-list-item {
+  text-align: center;
+  width: 50%;
+  padding-bottom: 1em;
+}
+
+.hobbies-list-item img {
+  width: 6em;
+  height: 6em;
+}
+
 @media (min-width: 768px) {
   .carousel-center {
     display: flex;
-
-    /* flex-direction: row;
-    width: 50%; */
   }
   a.carousel-control-prev,
   a.carousel-control-next {
@@ -80,5 +98,20 @@
     padding-left: 0;
     padding-right: 0.4em;
     font-size: 2.8em;
+  }
+  .hobbies-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hobbies-list-item img {
+    width: 10em;
+    height: 10em;
+  }
+  .hobbies-list-item {
+    width: 22.5%;
+  }
+  .hobbies-list-item div {
+    font-size: 1.1em;
   }
 }
