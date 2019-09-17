@@ -21,6 +21,23 @@ function MainCarousel() {
 
   const controls = window.innerWidth < 768 ? false : true;
 
+  const icons = (
+    <div className="carousel-center-icons">
+      <FontAwesome
+        className="fab fa-linkedin"
+        name="linkedin"
+        size="2x"
+        style={{ color: "rgb(46, 204, 113)" }}
+      />
+      <FontAwesome
+        className="fab fa-github-square"
+        name="github"
+        size="2x"
+        style={{ color: "rgb(46, 204, 113)" }}
+      />
+    </div>
+  );
+
   return (
     <Carousel
       activeIndex={index}
@@ -50,6 +67,7 @@ function MainCarousel() {
             </div>
 
             <div>
+              {window.innerWidth >= 768 ? icons : null}
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -59,21 +77,7 @@ function MainCarousel() {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-
-              <div className="carousel-center-icons">
-                <FontAwesome
-                  className="fab fa-linkedin"
-                  name="linkedin"
-                  size="2x"
-                  style={{ color: "rgb(46, 204, 113)" }}
-                />
-                <FontAwesome
-                  className="fab fa-github-square"
-                  name="github"
-                  size="2x"
-                  style={{ color: "rgb(46, 204, 113)" }}
-                />
-              </div>
+              {window.innerWidth < 768 ? icons : null}
             </div>
           </div>
         </div>
@@ -113,13 +117,11 @@ function MainCarousel() {
                   className="fab fa-linkedin"
                   name="linkedin"
                   size="2x"
-                  style={{ color: "rgb(46, 204, 113)" }}
                 />
                 <FontAwesome
                   className="fab fa-github-square"
                   name="github"
                   size="2x"
-                  style={{ color: "rgb(46, 204, 113)" }}
                 />
               </div>
             </div>

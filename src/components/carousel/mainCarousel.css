@@ -1,6 +1,11 @@
+.green-line {
+  margin-left: 0 !important;
+}
+
 .green-line div {
   border-bottom: 8px solid #2ecc71;
   width: 4rem;
+  margin-left: 0 !important;
 }
 
 .carousel-indicators li {
@@ -40,7 +45,8 @@
 
 .carousel-center-icons {
   text-align: center;
-  padding: 1rem;
+  color: rgb(46, 204, 113);
+  /* padding: 1rem; */
 }
 .fab.fa-linkedin,
 .fab.fa-github-square {
@@ -63,5 +69,16 @@
   }
   .carousel-center div {
     margin: 0.5em;
+  }
+
+  .carousel-center-icons {
+    text-align: start;
+    padding-left: 0 !important;
+  }
+  .fab.fa-linkedin,
+  .fab.fa-github-square {
+    padding-left: 0;
+    padding-right: 0.4em;
+    font-size: 2.8em;
   }
 }
