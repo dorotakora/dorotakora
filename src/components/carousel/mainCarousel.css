@@ -1,6 +1,6 @@
-/* .green-line {
-  margin-left: 6em !important;
-} */
+/* 
+CAROUSEL 
+*/
 
 .green-line div {
   border-bottom: 8px solid #2ecc71;
@@ -33,6 +33,9 @@
   padding-top: 1rem;
 }
 
+/* 
+iCONS GITHUB & LINKEDIN
+*/
 .carousel-center-icons {
   text-align: center;
   color: rgb(46, 204, 113);
@@ -42,6 +45,9 @@
   padding: 0.2em;
 }
 
+/* 
+HOBBIES & INTEREST
+*/
 .carousel-center.hobbies {
   display: flex;
   flex-direction: column;
@@ -63,6 +69,9 @@
   width: 6em;
   height: 6em;
 }
+/* 
+LINK TO RESUME 
+*/
 
 .link {
   width: 100%;
@@ -75,7 +84,7 @@
 }
 
 .link .link-resume {
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
   text-decoration: none !important;
   color: rgba(54, 51, 51, 0.5);
 }
@@ -84,6 +93,10 @@
   text-decoration: none !important;
   color: rgb(46, 204, 113);
 }
+
+/* 
+MEDIA QUERRIES FOR HUGHE SCREENS 
+*/
 
 @media (min-width: 768px) {
   .carousel-center {

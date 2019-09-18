@@ -16,10 +16,9 @@ import technologies from "../../assets/images/technologies.png";
 import CvPdf from "../../assets/cv/DorotaKoraCVeng.pdf";
 
 const styles = {
-  height: 850,
+  height: 680,
   width: "100%",
-  backgroundColor: "#f9f7f7",
-  marginTop: "-30px"
+  backgroundColor: "#f9f7f7"
 };
 
 function MainCarousel() {
@@ -68,26 +67,17 @@ function MainCarousel() {
                 <div></div>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Junior front-end developer and JavaScript enthusiast looking for
+                an opportunity to expand her knowledge, build the experience and
+                boost the career of professional IT specialist.
               </p>
             </div>
 
             <div>
               {window.innerWidth >= 768 ? icons : null}
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                A good team player and quick learner who can absorb new ideas
+                and communicate clearly and effectively.
               </p>
               {window.innerWidth < 768 ? icons : null}
             </div>
@@ -104,7 +94,7 @@ function MainCarousel() {
               <h3>EDUCATION</h3>
               <div></div>
             </div>
-            {window.innerWidth > 768 ? (
+            {window.innerWidth >= 768 ? (
               <div className="link col-xs-12 col-md-3 mr-md-auto">
                 <div>
                   <Link to={CvPdf} target="_blank" className="link-resume">
@@ -170,41 +160,71 @@ function MainCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <div style={styles}>
-          <div className="carousel-center" style={{ width: "80%" }}>
-            <div>
-              <div className="green-line">
-                <h3>EXPERIENCE</h3>
-                <div></div>
+          <div className="carousel-center row" style={{ width: "100%" }}>
+            <div
+              className="green-line col-xs-12 col-md-6 offset-md-3 ml-md-auto"
+              // style={{ paddingLeft: "7.5px" }}
+            >
+              <h3>WORK EXPERIENCE</h3>
+              <div></div>
+            </div>
+            {window.innerWidth >= 768 ? (
+              <div className="link col-xs-12 col-md-3 mr-md-auto">
+                <div>
+                  <Link to={CvPdf} target="_blank" className="link-resume">
+                    Download my full resume
+                  </Link>
+                </div>
               </div>
+            ) : null}
+
+            <div className="col-xs-12 col-md-3 ml-md-auto">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <strong>
+                  Store Manager
+                  <br />
+                </strong>
+                Rossmannn SDP Sp. z o.o. /Warszawa
+                <br />
+                <span style={{ color: "rgb(46, 204, 113)" }}>
+                  06.2010 – 08.2018
+                </span>
+                <br />
               </p>
             </div>
-
-            <div>
-              {window.innerWidth >= 768 ? icons : null}
+            <div className="col-xs-12 col-md-3 ">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <strong>
+                  Marketing Specjalist
+                  <br />
+                </strong>
+                Green-Field PPHU / Zielona Góra
+                <br />
+                <span style={{ color: "rgb(46, 204, 113)" }}>
+                  11.2009 – 05.2010
+                </span>
+                <br />
               </p>
-              {window.innerWidth < 768 ? icons : null}
+            </div>
+            <div className="col-xs-12 col-md-3 mr-md-auto">
+              <p>
+                <strong>
+                  Sales Consultant
+                  <br />
+                </strong>
+                Sklepy Komfort S.A. / Zielona Góra
+                <br />
+                <span style={{ color: "rgb(46, 204, 113)" }}>
+                  07.2007 – 10.2009
+                </span>
+                <br />
+              </p>
             </div>
           </div>
         </div>
       </Carousel.Item>
       <Carousel.Item>
-        <div style={styles}>
+        {/* <div style={styles}>
           <div className="carousel-center hobbies" style={{ width: "80%" }}>
             <div>
               <div className="green-line">
@@ -229,6 +249,53 @@ function MainCarousel() {
               <div className="hobbies-list-item">
                 <img src={technologies} alt="technologies"></img>
                 <div>New technologies</div>
+              </div>
+            </div>
+            <div className="link">
+              <div>
+                <Link to={CvPdf} target="_blank" className="link-resume">
+                  Download my full resume
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div> */}
+
+        <div style={styles}>
+          <div className="carousel-center hobbies" style={{ width: "80%" }}>
+            <div>
+              <div className="green-line ">
+                <h3>HOBBIES & INTERESTS</h3>
+                <div></div>
+              </div>
+            </div>
+            <div className="hobbies-list row ">
+              <div className="hobbies-list-item ">
+                <img src={cyclist} alt="cyclist"></img>
+                <div>Outdoor cycling</div>
+              </div>
+              <div className="hobbies-list-item ">
+                <img src={kettlebell} alt="kettlebell"></img>
+                <div>Kettlebells</div>
+              </div>
+              <div className="hobbies-list-item  ">
+                <img src={speedway} alt="speedway"></img>
+                <div>Speedway fan</div>
+              </div>
+
+              <div className="hobbies-list-item  ">
+                <img src={technologies} alt="technologies"></img>
+                <div>New technologies</div>
+              </div>
+            </div>
+            <div
+              className="link"
+              style={{ display: "flex", justifyContent: "center" }}
+            >
+              <div style={{ width: "30%" }}>
+                <Link to={CvPdf} target="_blank" className="link-resume">
+                  Download my full resume
+                </Link>
               </div>
             </div>
           </div>
