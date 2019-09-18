@@ -1,6 +1,6 @@
-.green-line {
-  margin-left: 0 !important;
-}
+/* .green-line {
+  margin-left: 6em !important;
+} */
 
 .green-line div {
   border-bottom: 8px solid #2ecc71;
@@ -22,16 +22,6 @@
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(46,204,113)' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-
-.right.carousel-control-next:hover {
-  /* background-image: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(rgba(46, 204, 113, 0.5)),
-    to(rgba(46, 204, 113, 0.0001))
-  ); */
 }
 
 .carousel-center {
@@ -74,6 +64,27 @@
   height: 6em;
 }
 
+.link {
+  width: 100%;
+  text-align: center;
+}
+.link div {
+  border: 1px solid rgba(54, 51, 51, 0.5);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.link .link-resume {
+  font-size: 1.2em;
+  text-decoration: none !important;
+  color: rgba(54, 51, 51, 0.5);
+}
+.link .link-resume:hover {
+  font-size: 1.2em;
+  text-decoration: none !important;
+  color: rgb(46, 204, 113);
+}
+
 @media (min-width: 768px) {
   .carousel-center {
     display: flex;
@@ -83,11 +94,14 @@
     width: 10%;
   }
   .carousel-center p {
-    font-size: 1.5em;
+    /* font-size: 1.2em; */
   }
   .carousel-center div {
     margin: 0.5em;
   }
+  /* .green-line {
+    padding-left: 7.5px !important;
+  } */
 
   .carousel-center-icons {
     text-align: start;
@@ -99,6 +113,7 @@
     padding-right: 0.4em;
     font-size: 2.8em;
   }
+
   .hobbies-list {
     display: flex;
     justify-content: space-between;
