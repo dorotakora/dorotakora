@@ -54,7 +54,8 @@ function MainCarousel() {
       activeIndex={index}
       direction={direction}
       onSelect={handleSelect}
-      interval={null}
+      fade={true}
+      interval={5000}
       controls={controls}
       touch={true}
     >
@@ -224,43 +225,6 @@ function MainCarousel() {
         </div>
       </Carousel.Item>
       <Carousel.Item>
-        {/* <div style={styles}>
-          <div className="carousel-center hobbies" style={{ width: "80%" }}>
-            <div>
-              <div className="green-line">
-                <h3>HOBBIES & INTERESTS</h3>
-                <div></div>
-              </div>
-            </div>
-            <div className="hobbies-list">
-              <div className="hobbies-list-item">
-                <img src={cyclist} alt="cyclist"></img>
-                <div>Outdoor cycling</div>
-              </div>
-              <div className="hobbies-list-item">
-                <img src={kettlebell} alt="kettlebell"></img>
-                <div>Kettlebells</div>
-              </div>
-              <div className="hobbies-list-item">
-                <img src={speedway} alt="speedway"></img>
-                <div>Speedway fan</div>
-              </div>
-
-              <div className="hobbies-list-item">
-                <img src={technologies} alt="technologies"></img>
-                <div>New technologies</div>
-              </div>
-            </div>
-            <div className="link">
-              <div>
-                <Link to={CvPdf} target="_blank" className="link-resume">
-                  Download my full resume
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
         <div style={styles}>
           <div className="carousel-center hobbies" style={{ width: "80%" }}>
             <div>
@@ -292,7 +256,7 @@ function MainCarousel() {
               className="link"
               style={{ display: "flex", justifyContent: "center" }}
             >
-              <div style={{ width: "30%" }}>
+              <div style={{ width: "160px" }}>
                 <Link to={CvPdf} target="_blank" className="link-resume">
                   Download my full resume
                 </Link>
