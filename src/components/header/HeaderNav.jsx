@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, NavDropdown, Nav } from "react-bootstrap";
+import Skills from "../skills/Skills";
 
 import CvPdf from "../../assets/cv/DorotaKoraCVeng.pdf";
 
@@ -17,7 +18,7 @@ const HeaderNav = () => {
             <NavDropdown.Divider />
             <NavDropdown.Item href="#action/3.4">Interests</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="#features">Skills</Nav.Link>
+          <Nav.Link to={Skills}>Skills</Nav.Link>
           <Nav.Link href="#pricing">Contact</Nav.Link>
         </Nav>
         <Nav style={{ border: "1px solid white" }}>

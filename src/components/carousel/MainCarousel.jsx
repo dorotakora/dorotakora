@@ -55,7 +55,7 @@ function MainCarousel() {
       direction={direction}
       onSelect={handleSelect}
       fade={true}
-      interval={5000}
+      interval={false}
       controls={controls}
       touch={true}
     >
@@ -87,7 +87,7 @@ function MainCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <div style={styles}>
-          <div className="carousel-center row" style={{ width: "100%" }}>
+          <div className="carousel-center row" style={{ width: "92%" }}>
             <div
               className="green-line col-xs-12 col-md-6 offset-md-3 ml-md-auto"
               // style={{ paddingLeft: "7.5px" }}

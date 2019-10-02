@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 
 import "./App.css";
 import MainCarousel from "./components/carousel/MainCarousel";
+import Skills from "./components/skills/Skills";
 
 const App = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -21,10 +22,11 @@ const App = () => {
   });
 
   return (
-    <div className="bcg">
+    <div className="app bcg">
       <Router>
         <Route exact path="/" component={Header} />
         <Route exact path="/resume" component={MainCarousel}></Route>
+        <Route exact path="/skills" component={Skills}></Route>
       </Router>
     </div>
   );

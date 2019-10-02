@@ -7,7 +7,7 @@ import Skills from "../skills/Skills";
 export default class Header extends Component {
   render() {
     return (
-      <div className="main-container">
+      <div className="main-container bcg">
         <HeaderNav />
         <Introduction />
         <MainCarousel />
