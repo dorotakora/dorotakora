@@ -74,7 +74,7 @@ LINK TO RESUME
 */
 
 .link {
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
 }
 .link div {
@@ -101,24 +101,33 @@ MEDIA QUERRIES FOR HUGE SCREENS
 @media (min-width: 768px) {
   .carousel-center {
     display: flex;
+    /* flex-wrap: wrap; */
   }
   a.carousel-control-prev,
   a.carousel-control-next {
     width: 10%;
   }
-  .carousel-center p {
-    /* font-size: 1.2em; */
-  }
+
   .carousel-center div {
     margin: 0.5em;
   }
-  /* .green-line {
-    padding-left: 7.5px !important;
-  } */
-
+  .green-line {
+    margin-left: 0 !important;
+    width: 64%;
+  }
+  .link {
+    width: 32%;
+  }
+  .link div {
+    margin-left: 0;
+  }
+  .resume-details {
+    width: 32%;
+    margin-left: 0 !important;
+  }
   .carousel-center-icons {
     text-align: start;
-    padding-left: 0 !important;
+    margin-left: 0 !important;
   }
   .fab.fa-linkedin,
   .fab.fa-github-square {

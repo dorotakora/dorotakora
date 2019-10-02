@@ -62,7 +62,7 @@ function MainCarousel() {
       <Carousel.Item>
         <div style={styles}>
           <div className="carousel-center" style={{ width: "80%" }}>
-            <div>
+            <div style={{ width: "100%" }}>
               <div className="green-line">
                 <h3>ABOUT ME</h3>
                 <div></div>
@@ -74,7 +74,7 @@ function MainCarousel() {
               </p>
             </div>
 
-            <div>
+            <div style={{ width: "100%" }}>
               {window.innerWidth >= 768 ? icons : null}
               <p>
                 A good team player and quick learner who can absorb new ideas
@@ -87,16 +87,16 @@ function MainCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <div style={styles}>
-          <div className="carousel-center row" style={{ width: "92%" }}>
-            <div
-              className="green-line col-xs-12 col-md-6 offset-md-3 ml-md-auto"
-              // style={{ paddingLeft: "7.5px" }}
-            >
+          <div
+            className="carousel-center row"
+            style={{ width: "80%", justifyContent: "center" }}
+          >
+            <div className="green-line">
               <h3>EDUCATION</h3>
               <div></div>
             </div>
             {window.innerWidth >= 768 ? (
-              <div className="link col-xs-12 col-md-3 mr-md-auto">
+              <div className="link">
                 <div>
                   <Link to={CvPdf} target="_blank" className="link-resume">
                     Download my full resume
@@ -105,7 +105,7 @@ function MainCarousel() {
               </div>
             ) : null}
 
-            <div className="col-xs-12 col-md-3 ml-md-auto">
+            <div className="resume-details">
               <p>
                 <strong>
                   Warsaw University of Life Sciences - SGGW
@@ -121,7 +121,7 @@ function MainCarousel() {
                 administration of relational databases like Oracle and mySQL.
               </p>
             </div>
-            <div className="col-xs-12 col-md-3 ">
+            <div className="resume-details">
               <p>
                 <strong>
                   Coders Lab - IT School
@@ -139,7 +139,7 @@ function MainCarousel() {
               </p>
             </div>
 
-            <div className="col-xs-12 col-md-3 mr-md-auto">
+            <div className="resume-details">
               <p>
                 <strong>
                   Univesity of Zielona Góra
@@ -161,16 +161,13 @@ function MainCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <div style={styles}>
-          <div className="carousel-center row" style={{ width: "100%" }}>
-            <div
-              className="green-line col-xs-12 col-md-6 offset-md-3 ml-md-auto"
-              // style={{ paddingLeft: "7.5px" }}
-            >
+          <div className="carousel-center row" style={{ width: "80%" }}>
+            <div className="green-line ">
               <h3>WORK EXPERIENCE</h3>
               <div></div>
             </div>
             {window.innerWidth >= 768 ? (
-              <div className="link col-xs-12 col-md-3 mr-md-auto">
+              <div className="link">
                 <div>
                   <Link to={CvPdf} target="_blank" className="link-resume">
                     Download my full resume
@@ -179,13 +176,13 @@ function MainCarousel() {
               </div>
             ) : null}
 
-            <div className="col-xs-12 col-md-3 ml-md-auto">
+            <div className="resume-details">
               <p>
                 <strong>
                   Store Manager
                   <br />
                 </strong>
-                Rossmannn SDP Sp. z o.o. /Warszawa
+                Rossmannn SDP Sp. z o.o. Warszawa
                 <br />
                 <span style={{ color: "rgb(46, 204, 113)" }}>
                   06.2010 – 08.2018
@@ -193,13 +190,13 @@ function MainCarousel() {
                 <br />
               </p>
             </div>
-            <div className="col-xs-12 col-md-3 ">
+            <div className="resume-details">
               <p>
                 <strong>
                   Marketing Specjalist
                   <br />
                 </strong>
-                Green-Field PPHU / Zielona Góra
+                Green-Field PPHU Zielona Góra
                 <br />
                 <span style={{ color: "rgb(46, 204, 113)" }}>
                   11.2009 – 05.2010
@@ -207,13 +204,13 @@ function MainCarousel() {
                 <br />
               </p>
             </div>
-            <div className="col-xs-12 col-md-3 mr-md-auto">
+            <div className="resume-details">
               <p>
                 <strong>
                   Sales Consultant
                   <br />
                 </strong>
-                Sklepy Komfort S.A. / Zielona Góra
+                Sklepy Komfort S.A. Zielona Góra
                 <br />
                 <span style={{ color: "rgb(46, 204, 113)" }}>
                   07.2007 – 10.2009
@@ -256,11 +253,11 @@ function MainCarousel() {
               className="link"
               style={{ display: "flex", justifyContent: "center" }}
             >
-              <div style={{ width: "160px" }}>
+              {/* <div style={{ width: "160px" }}>
                 <Link to={CvPdf} target="_blank" className="link-resume">
                   Download my full resume
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
