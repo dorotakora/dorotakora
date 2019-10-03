@@ -21,7 +21,7 @@ const HeaderNav = () => {
           <Nav.Link to={Skills}>Skills</Nav.Link>
           <Nav.Link href="#pricing">Contact</Nav.Link>
         </Nav>
-        <Nav style={{ border: "1px solid white" }}>
+        <Nav id="link-to-resume">
           <Nav.Link href={CvPdf} target="_blank">
             Download my full resume
           </Nav.Link>

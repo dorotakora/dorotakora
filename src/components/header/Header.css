@@ -1,8 +1,3 @@
-/* .main-container {
-  max-width: 1324px;
-  margin: 0 auto;
-} */
-
 .intro {
   display: flex;
   justify-content: center;
@@ -34,6 +29,22 @@
   height: 100%;
 }
 
+#link-to-resume {
+  border: 1px solid white;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0 5px;
+}
+#link-to-resume:hover {
+  border-radius: 10px;
+  transition: 0.6s;
+}
+#link-to-resume:hover a {
+  color: rgb(46, 204, 113);
+}
+
 @media (min-width: 768px) {
   .intro {
     position: relative;
@@ -56,5 +67,8 @@
     z-index: 999;
     width: 270px;
     height: 270px;
+  }
+  #link-to-resume {
+    width: 220px;
   }
 }

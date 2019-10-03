@@ -44,6 +44,10 @@
   }
 }
 
+/* 
+MEDIA QUERRIES FOR HUGE SCREENS 
+*/
+
 @media (min-width: 768px) {
   .slides .icon {
     width: 20%;

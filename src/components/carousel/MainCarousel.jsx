@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import "./mainCarousel.css";
+import "./MainCarousel.css";
 import Carousel from "react-bootstrap/Carousel";
 import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 
@@ -18,7 +18,7 @@ import CvPdf from "../../assets/cv/DorotaKoraCVeng.pdf";
 const styles = {
   height: 680,
   width: "100%",
-  backgroundColor: "#f9f7f7"
+  backgroundColor: "#f9f7f7 !important"
 };
 
 function MainCarousel() {
@@ -87,10 +87,7 @@ function MainCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <div style={styles}>
-          <div
-            className="carousel-center row"
-            style={{ width: "80%", justifyContent: "center" }}
-          >
+          <div className="carousel-center row" style={{ width: "80%" }}>
             <div className="green-line">
               <h3>EDUCATION</h3>
               <div></div>
@@ -252,13 +249,7 @@ function MainCarousel() {
             <div
               className="link"
               style={{ display: "flex", justifyContent: "center" }}
-            >
-              {/* <div style={{ width: "160px" }}>
-                <Link to={CvPdf} target="_blank" className="link-resume">
-                  Download my full resume
-                </Link>
-              </div> */}
-            </div>
+            ></div>
           </div>
         </div>
       </Carousel.Item>
