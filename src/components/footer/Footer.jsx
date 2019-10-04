@@ -9,7 +9,7 @@ class Footer extends Component {
   render() {
     return (
       <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-        <div class="container text-center">
+        <div className="container text-center footer-container">
           <div className="link footer-link">
             <div>
               <Link
@@ -23,7 +23,7 @@ class Footer extends Component {
             </div>
           </div>
           <br></br>
-          <div>Follow me on social networks</div>
+          <div className="footer-social">Follow me on social networks</div>
           <div className="carousel-center-icons footer-icons">
             <FontAwesome
               className="fab fa-linkedin"
@@ -38,7 +38,9 @@ class Footer extends Component {
               style={{ color: "rgb(46, 204, 113)" }}
             />
           </div>
-          <small>Copyright &copy; 2019 by Dorota Kora</small>
+          <div className="footer-copyright" style={{ fontSize: "0.8em" }}>
+            Copyright &copy; 2019 by Dorota Kora
+          </div>
         </div>
       </footer>
     );
