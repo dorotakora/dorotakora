@@ -1,5 +1,8 @@
 .slides {
   padding-top: 1em;
+  /* max-width: 1024px; */
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .slides-learned,
 .slides-specialized,
@@ -58,7 +61,7 @@ MEDIA QUERRIES FOR HUGE SCREENS
   }
 
   .slides-desc {
-    padding-left: 8%;
+    /* padding-left: 0; */
     font-size: 1.8em;
   }
 }

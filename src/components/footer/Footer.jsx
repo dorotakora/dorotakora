@@ -8,7 +8,7 @@ import CvPdf from "../../assets/cv/DorotaKoraCVeng.pdf";
 class Footer extends Component {
   render() {
     return (
-      <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+      <footer id="sticky-footer" className="py-4 bg-dark text-white-50">
         <div className="container text-center footer-container">
           <div className="link footer-link">
             <div>
